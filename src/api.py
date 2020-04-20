@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, jsonify
 import model
 import controller
 import global_var
@@ -14,4 +14,4 @@ def fetch_current_weather(*args, **kwargs):
                                                   "-6.200000",
                                                   "106.816666")
     result_dict = controller.fetch_current_weather(weather_model)
-    return result_dict
+    return jsonify(result_dict)
