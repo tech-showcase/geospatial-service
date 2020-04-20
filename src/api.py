@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
-import model
-import controller
-import global_var
+from src import model
+from src import controller
+from src import global_var
 
 api = Blueprint('api', __name__)
 
