@@ -1,6 +1,0 @@
-{
-  "weather": {
-    "server_address": "http://dummy.address/",
-    "api_key": "dummy-key"
-  }
-}
