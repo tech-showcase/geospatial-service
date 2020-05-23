@@ -26,7 +26,7 @@ class WeatherSpecificLocation:
         return data_dict
 
     def __fetch_data(self):
-        path = "data/2.5/onecall?lat={}&lon={}&appid={}".format(self.lat, self.lon, self.api_key)
+        path = 'data/2.5/onecall?lat={}&lon={}&appid={}'.format(self.lat, self.lon, self.api_key)
         endpoint = parse.urljoin(self.server_address, path)
         result = get(endpoint)
         self.data = result.json()
